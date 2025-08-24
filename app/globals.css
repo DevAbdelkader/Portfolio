@@ -1,26 +1,147 @@
 @import "tailwindcss";
 
+@plugin "daisyui" {
+  themes: night --default;
+  root: ":root";
+  logs: false;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000B0E;
+  --foreground: #fff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-alatsi: var(--f-alatsi);
+  --font-alata: var(--f-alata);
+  --font-audiowide: var(--f-audiowide);
+  --font-ropa-sans: var(--f-ropa-sans);
+  --font-koulen: var(--f-koulen);
+  --font-almendra: var(--f-almendra);
+  --font-major-display: var(--f-major-display);
+  --font-bruno: var(--f-bruno);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@utility btn {
+  @apply rounded-full font-bruno whitespace-nowrap;
+}
+
+@utility btn-0 {
+  @apply btn btn-md bg-[unset] bg-gradient-to-br from-[#000b0e]/15 to-black/60 border-[#b09dfa]/30 border-1 font-audiowide text-[#b09dfa]/80 shadow-sm shadow-black hover:bg-black/60 hover:text-white;
+}
+
+@utility info-btn {
+  @apply text-center cursor-pointer;
+  &.info-active .info-btn-title {
+    @apply text-[#f0dcb6]/100 text-shadow-lg text-shadow-[#f0dcb6]/40
   }
+}
+
+@utility info-btn-title {
+  @apply font-koulen text-[calc(18px+2vw)] sm:text-5xl text-[#f0dcb6]/20 transition-all duration-700;
+}
+
+@utility info-btn-desc {
+  @apply text-white/50 uppercase mt-2 text-xs sm:text-sm;
+}
+
+@utility info-card {
+  @apply rounded-2xl p-5 bg-black/40 text-white/40 font-alata flex flex-col gap-3 max-sm:col-span-12;
+}
+
+@utility info-card-title {
+  @apply text-white/60 font-koulen;
+}
+
+@utility badge-container {
+  @apply flex gap-2 flex-wrap justify-center;
+}
+
+@utility special-badge {
+  @apply badge badge-lg badge-outline border-[#AC8057] text-[#AC8057] font-ropa-sans;
+}
+
+@utility badge-* {
+  border-color: --value([color]);
+  color: --value([color]);
+}
+
+@utility info-grid {
+  @apply grid grid-cols-12 gap-4 mt-[50px] max-w-4xl mx-auto px-4 py-10;
+}
+
+@utility project {
+  @apply card col-span-8 @md:col-span-4 font-alata;
+}
+
+@utility project-* {
+  --p-color: --value([color]);
+  .project-body {
+    border-color: var(--p-color)
+  }
+  .project-badge {
+    color: var(--p-color);
+    background: color-mix(in srgb, var(--p-color) 20%, transparent 80%);
+  }
+}
+
+@utility project-wide {
+  @apply card card-side col-span-8 font-alata;
+  .project-body {
+    @apply border-l-0 border-t-1 rounded-bl-none rounded-r-2xl w-[50%] shrink-0; 
+  }
+  img {
+    @apply object-cover;
+  }
+}
+
+@utility project-title {
+  @apply card-title text-sm uppercase text-white;
+}
+
+@utility project-body {
+  @apply card-body p-3 border-1 border-white border-t-0 rounded-b-2xl;
+}
+
+@utility project-badge {
+  @apply badge badge-sm badge-soft border-0;
+}
+
+@utility project-btn {
+  @apply btn btn-sm font-alatsi uppercase;
+}
+
+@utility project-actions {
+  @apply mt-1;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+#welcome {
+  background-repeat: no-repeat;
+  background-size: 100% 100dvh;
+}
+
+@utility bg-desktop {
+  background: radial-gradient(farthest-side, rgba(255, 112, 112, .4), rgba(128, 27, 164, 0.25) 51%, #000b0e 100%);
+}
+
+@utility bg-mobile {
+  background: radial-gradient(circle at top, rgba(255, 112, 112, .3), transparent 80%);
+}
+
+#about {
+  background-color: #000b0e;
+  
+  background: linear-gradient(to top, #000b0e, rgba(0, 0, 0, 0) 300px), radial-gradient(at 17.4569% 71.6667%, #45644270 0, rgba(0, 0, 0, 0) 50%), radial-gradient(at 71.0129% 85.2083%, #2e4e32d6 0, rgba(0, 0, 0, 0) 50%), radial-gradient(at 34.0517% 44.7917%, #406b5b88 0, rgba(0, 0, 0, 0) 50%), #000b0e;
+    
+}
+
+#contact {
+  background: linear-gradient(to bottom, #000b0e, transparent 300px), radial-gradient(ellipse at top left, transparent 45%, rgba(24, 24, 55, .4), #000b0e);
 }
