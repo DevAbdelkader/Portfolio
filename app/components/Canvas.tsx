@@ -17,7 +17,7 @@ const IconPlane = memo(({ radius, icon }: { radius: number, icon: any }) => {
   useEffect(() => {
     if (ref.current) {
       ref.current?.scale.set(-1,1,-1);
-      ref.current?.lookAt(0,0,0);
+      ref.current?.lookAt(0,-0.5,0);
     }
   }, [ref.current])
 
@@ -115,17 +115,15 @@ const Scene = () => {
 const MyCanvas = () => {
 
   return (
-    <div className="h-[100vh]">
-      <Canvas>
-        <directionalLight position={[0,2,1]} intensity={1} />
-        <ambientLight intensity={.5} />
-        <OrbitControls autoRotateSpeed={2} autoRotate={true} enableDamping={false} enableZoom={false} />
-        <Sparkles count={100} noise={4} size={2} scale={15} />
-        <group position={[0,-1,0]}>
-          <Scene />
-        </group>
-      </Canvas>
-    </div>
+    <Canvas>
+      <directionalLight position={[0,2,1]} intensity={1} />
+      <ambientLight intensity={.5} />
+      <OrbitControls autoRotateSpeed={2} autoRotate={true} enableDamping={false} enableZoom={false} />
+      <Sparkles count={100} noise={4} size={2} scale={15} />
+      <group scale={0.8} position={[0,-0.5,0]}>
+        <Scene />
+      </group>
+    </Canvas>
   )
 }
 
