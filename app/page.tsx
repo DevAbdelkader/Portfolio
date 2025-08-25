@@ -19,7 +19,7 @@ export default function Home() {
       </p>
 
       <div className="flex gap-5 mt-28 @max-sm:mt-20 flex-wrap justify-center z-2">
-        <Link href="/about?tab=skills" className="btn-0 @max-sm:btn-sm">Explore Projects</Link>
+        <Link href="/projects" className="btn-0 @max-sm:btn-sm">Explore Projects</Link>
         <Link href="/about" className="btn-0 @max-sm:btn-sm">About Me</Link>
       </div>
     

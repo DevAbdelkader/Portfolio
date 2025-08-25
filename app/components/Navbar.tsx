@@ -18,7 +18,7 @@ const Navbar = () => {
       
       <div className="navbar-center text-white/50  pr-4 gap-3 font-alatsi text-sm uppercase hidden sm:flex">
         <Link href="/" className="hover:text-white/80">Home</Link>
-        <Link href="/about?tab=skills" className="hover:text-white/80">Projects</Link>
+        <Link href="/projects" className="hover:text-white/80">Projects</Link>
         <Link href="/about" className="hover:text-white/80">About</Link>
         <Link href="/contact" className="hover:text-white/80">Contact</Link>
       </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content bg-[#421d0b]/95 rounded-box z-1 mt-3 w-52 p-2 shadow font-alatsi uppercase">
             <li><Link href="/"><Home size={16} />Home</Link></li>
-            <li><Link href="/about?tab=skills"><Diagram size={16} />Projects</Link></li>
+            <li><Link href="/projects"><Diagram size={16} />Projects</Link></li>
             <li><Link href="/about"><Info size={16} />About</Link></li>
             <li><Link href="/contact"><Message size={16} />Contact</Link></li>
           </ul>
