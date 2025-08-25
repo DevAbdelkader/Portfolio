@@ -44,23 +44,6 @@ const Skills = ({ active }: { active: boolean }) => {
             tailwind="project-[#cfc763]"
           />
 
-
-          {/* <div className="project project-[#cfc763]"> */}
-          {/*   <figure> */}
-          {/*     <img   */}
-          {/*       src="/images/thumbnail.jpg" */}
-          {/*       alt="" */}
-          {/*     /> */}
-          {/*   </figure> */}
-          {/*   <div className="project-body"> */}
-          {/*     <div className="project-badge">Website</div> */}
-          {/*     <div className="project-title">Website Project</div> */}
-          {/*     <div className="project-actions"> */}
-          {/*       <button className="project-btn">View</button> */}
-          {/*     </div> */}
-          {/*   </div> */}
-          {/* </div> */}
-
           <Project
             title="Website Project"
             badge="Website"
@@ -69,22 +52,6 @@ const Skills = ({ active }: { active: boolean }) => {
             }}
             tailwind="project-[#70a3cc]"
           />
-
-          {/* <div className="project project-[#70a3cc]"> */}
-          {/*   <figure> */}
-          {/*     <img */}
-          {/*       src="/images/thumbnail.jpg" */}
-          {/*       alt="" */}
-          {/*     /> */}
-          {/*   </figure> */}
-          {/*   <div className="project-body"> */}
-          {/*     <div className="project-badge">Problem Solving</div> */}
-          {/*     <div className="project-title">Project Name</div> */}
-          {/*     <div className="project-actions"> */}
-          {/*       <button className="project-btn">View</button> */}
-          {/*     </div> */}
-          {/*   </div> */}
-          {/* </div> */}
 
           <Project
             title="Library Name"
@@ -99,25 +66,6 @@ const Skills = ({ active }: { active: boolean }) => {
               lorem lorem lorem lorem loremlorem lorem lorem lorem loremlorem lorem lorem lorem loremlorem lorem lorem lorem
             </p>
           </Project>
-
-          {/* <div className="@max-md:project @md:project-wide project-[#a4445b]"> */}
-          {/*   <figure> */}
-          {/*     <img */}
-          {/*       src="/images/thumbnail.jpg" */}
-          {/*       alt="" */}
-          {/*     /> */}
-          {/*   </figure> */}
-          {/*   <div className="project-body"> */}
-          {/*     <div className="project-badge">Javascript Library</div> */}
-          {/*     <div className="project-title">Project Name</div> */}
-          {/*     <p> */}
-          {/*       lorem lorem lorem lorem loremlorem lorem lorem lorem loremlorem lorem lorem lorem loremlorem lorem lorem lorem */}
-          {/*     </p> */}
-          {/*     <div className="project-actions"> */}
-          {/*       <button className="project-btn">View</button> */}
-          {/*     </div> */}
-          {/*   </div> */}
-          {/* </div> */}
 
         </div>
       </InfoCard>
