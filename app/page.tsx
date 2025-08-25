@@ -13,14 +13,14 @@ export default function Home() {
       <CanvasContainer />
 
       <div className="text-[calc(14px+8vw)] @max-sm:text-3xl md:text-8xl font-major-display bg-gradient-to-t from-[#D87979]/0 via-[#D87979]/20 to-[#993232]/95 bg-clip-text text-transparent tracking-widest">Abdelkader</div>
-      <div className="badge badge-soft bg-[#FCB87A]/10 border-0 mt-2 text-sm @max-sm:text-xs sm:text-lg text-[#FCB87A]/60 font-alatsi tracking-[calc(.25px+1vw)] sm:tracking-[10px] uppercase"><Star />Full stack web developer<Star /></div>
+      <div className="badge badge-soft bg-[#FCB87A]/10 border-0 mt-2 text-sm @max-sm:text-xs sm:text-lg text-[#FCB87A]/60 font-alatsi tracking-[calc(.25px+1vw)] sm:tracking-[10px] uppercase z-1"><Star />Full stack web developer<Star /></div>
       <p className="max-w-xs text-[#FF9D9D]/60 tracking-widest text-shadow-md text-shadow-black/40 text-[calc(12px+1vw)] sm:text-xl capitalize text-center mt-9 z-2">
         Precision meets imagination
       </p>
 
-      <div className="flex gap-5 mt-28 flex-wrap justify-center z-2">
-        <Link href="/?tab=skills#about" className="btn-0 @max-sm:btn-sm">Explore Projects</Link>
-        <Link href="/#about" className="btn-0 @max-sm:btn-sm">About Me</Link>
+      <div className="flex gap-5 mt-28 @max-sm:mt-20 flex-wrap justify-center z-2">
+        <Link href="/about?tab=skills" className="btn-0 @max-sm:btn-sm">Explore Projects</Link>
+        <Link href="/about" className="btn-0 @max-sm:btn-sm">About Me</Link>
       </div>
     
     </RouteAnimate>
