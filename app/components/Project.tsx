@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { GoRepoForked } from "react-icons/go"
 
 interface ProjectProps {
@@ -18,9 +19,11 @@ const Project = ({ title, badge, image: { src: imageSrc, alt: imageAlt }, childr
   return (
     <div className={`@max-md:project ${wide ? "@md:project-wide" : "@md:project" } ${ tailwind !== undefined ? tailwind : "" }`}>
       <figure>
-        <img
+        <Image
           src={imageSrc}
-          alt={imageAlt}
+          alt={imageAlt || ''}
+          width={425}
+          height={300}
         />
       </figure>
       <div className="project-body">
@@ -30,7 +33,7 @@ const Project = ({ title, badge, image: { src: imageSrc, alt: imageAlt }, childr
         </div>
         {children}
         <div className="project-actions">
-          <a className="project-btn" href={viewPath}>View</a>
+          { viewPath && <a className="project-btn" href={viewPath}>View</a> }
           { repo && <a 
             className="link link-hover text-white/60 items-center gap-2 inline-flex text-sm"
             href={repo}

@@ -51,7 +51,7 @@ const Page = () => {
               title="My Shelf"
               badge="Website"
               image={{
-                src: "/images/projects/My-Shelf.jpg"
+                src: "/images/projects/my-shelf.jpg"
               }}
               repo="https://github.com/DevAbdelkader/My-Shelf"
               tailwind="project-[#c4939b]"
