@@ -31,44 +31,6 @@ const Skills = ({ active }: { active: boolean }) => {
           <div className="special-badge badge-[#ddd]">HTML & CSS</div>
         </div>
       </InfoCard>
-
-      <InfoCard title="Projects" tailwind="sm:col-span-12">
-        <div className="grid grid-cols-8 gap-4">
-
-          <Project
-            title="Website Project"
-            badge="Website"
-            image={{
-              src: "/images/thumbnail.jpg"
-            }}
-            tailwind="project-[#cfc763]"
-          />
-
-          <Project
-            title="Website Project"
-            badge="Website"
-            image={{
-              src: "/images/thumbnail.jpg"
-            }}
-            tailwind="project-[#70a3cc]"
-          />
-
-          <Project
-            title="Library Name"
-            badge="Javascript Library"
-            image={{
-              src: "/images/thumbnail.jpg"
-            }}
-            tailwind="project-[#a4445b]"
-            wide
-          >
-            <p>
-              lorem lorem lorem lorem loremlorem lorem lorem lorem loremlorem lorem lorem lorem loremlorem lorem lorem lorem
-            </p>
-          </Project>
-
-        </div>
-      </InfoCard>
     </div>
   )
 }
