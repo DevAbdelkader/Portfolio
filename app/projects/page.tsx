@@ -20,34 +20,44 @@ const Page = () => {
           <div className="grid grid-cols-8 gap-4">
 
             <Project
-              title="Website Project"
+              title="Fish Finder"
               badge="Website"
               image={{
-                src: "/images/thumbnail.jpg"
+                src: "/images/projects/FishFinder-2.jpg"
               }}
-              tailwind="project-[#cfc763]"
-            />
-
-            <Project
-              title="Website Project"
-              badge="Website"
-              image={{
-                src: "/images/thumbnail.jpg"
-              }}
-              tailwind="project-[#70a3cc]"
-            />
-
-            <Project
-              title="Library Name"
-              badge="Javascript Library"
-              image={{
-                src: "/images/thumbnail.jpg"
-              }}
-              tailwind="project-[#a4445b]"
-              wide
+              repo="https://github.com/DevAbdelkader/fish-finder"
+              tailwind="project-[#93d1de]"
             >
               <p>
-                lorem lorem lorem lorem loremlorem lorem lorem lorem loremlorem lorem lorem lorem loremlorem lorem lorem lorem
+                FishFinder (virtual) company. Lightweight web app that helps you explore a curated collection of 3D fish models and related assets.
+              </p>
+            </Project>
+
+            <Project
+              title="GLB To Image"
+              badge="Website"
+              image={{
+                src: "/images/projects/glb-to-image.jpg"
+              }}
+              repo="https://github.com/DevAbdelkader/glb-to-image"
+              tailwind="project-[#d4a4f8]"
+            >
+              <p>
+                A small client-side web app that lets you upload a GLB/GLTF 3D model, preview it interactively, and capture/export images from the viewport.
+              </p>
+            </Project>
+
+            <Project
+              title="My Shelf"
+              badge="Website"
+              image={{
+                src: "/images/projects/My-Shelf.jpg"
+              }}
+              repo="https://github.com/DevAbdelkader/My-Shelf"
+              tailwind="project-[#c4939b]"
+            >
+              <p>
+                My-Shelf is a books management web application that provides an interface to view, search, and add books using their ISBN. It fetches book details from the ISBN Search API and stores data locally for offline access.
               </p>
             </Project>
 
