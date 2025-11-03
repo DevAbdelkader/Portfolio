@@ -73,7 +73,7 @@
 }
 
 @utility project {
-  @apply card col-span-8 @md:col-span-4 font-alata;
+  @apply card col-span-8 @md:col-span-4 font-alata text-white/80;
 }
 
 @utility project-* {
@@ -85,10 +85,13 @@
     color: var(--p-color);
     background: color-mix(in srgb, var(--p-color) 20%, transparent 80%);
   }
+  .project-btn {
+    @apply font-ropa-sans border-[var(--p-color)] border-2 bg-transparent text-[var(--p-color)] hover:bg-[var(--p-color)] hover:text-black
+  }
 }
 
 @utility project-wide {
-  @apply card card-side col-span-8 font-alata;
+  @apply card card-side col-span-8;
   .project-body {
     @apply border-l-0 border-t-1 rounded-bl-none rounded-r-2xl w-[50%] shrink-0; 
   }
@@ -98,7 +101,7 @@
 }
 
 @utility project-title {
-  @apply card-title text-sm uppercase text-white;
+  @apply card-title text-lg text-white font-normal;
 }
 
 @utility project-body {
@@ -110,11 +113,11 @@
 }
 
 @utility project-btn {
-  @apply btn btn-sm font-alatsi uppercase;
+  @apply btn btn-md rounded-2xl bg-white uppercase;
 }
 
 @utility project-actions {
-  @apply mt-1;
+  @apply flex flex-wrap gap-4 pt-1 mt-auto font-alatsi;
 }
 
 body {

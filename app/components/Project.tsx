@@ -1,3 +1,5 @@
+import { GoRepoForked } from "react-icons/go"
+
 interface ProjectProps {
   title: string,
   badge: string,
@@ -7,11 +9,12 @@ interface ProjectProps {
   },
   tailwind?: string,
   viewPath?: string,
+  repo?: string,
   wide?: boolean,
   children?: React.ReactNode
 }
 
-const Project = ({ title, badge, image: { src: imageSrc, alt: imageAlt }, children, tailwind, wide, viewPath = "" }: ProjectProps) => {
+const Project = ({ title, badge, image: { src: imageSrc, alt: imageAlt }, children, tailwind, wide, viewPath = "", repo }: ProjectProps) => {
   return (
     <div className={`@max-md:project ${wide ? "@md:project-wide" : "@md:project" } ${ tailwind !== undefined ? tailwind : "" }`}>
       <figure>
@@ -21,11 +24,17 @@ const Project = ({ title, badge, image: { src: imageSrc, alt: imageAlt }, childr
         />
       </figure>
       <div className="project-body">
-        <div className="project-badge">{badge}</div>
-        <div className="project-title">{title}</div>
+        <div className="flex gap-3 items-center">
+          <div className="project-badge">{badge}</div>
+          <div className="project-title">{title}</div>
+        </div>
         {children}
         <div className="project-actions">
           <a className="project-btn" href={viewPath}>View</a>
+          { repo && <a 
+            className="link link-hover text-white/60 items-center gap-2 inline-flex text-sm"
+            href={repo}
+            ><GoRepoForked size={16} />GitHub Repo</a>}
         </div>
       </div>
     </div>
