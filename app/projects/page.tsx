@@ -19,6 +19,16 @@ const Page = () => {
           <div className="info-card-title">Projects</div>
           <div className="grid grid-cols-8 gap-4">
 
+
+            <Project
+              title="Just Dashboard"
+              badge="Website"
+              image={{
+                src: "/images/projects/just-dashboard.jpg"
+              }}
+              tailwind="project-[#e6fdfe]"
+            />
+
             <Project
               title="Fish Finder"
               badge="Website"
@@ -26,6 +36,7 @@ const Page = () => {
                 src: "/images/projects/FishFinder-2.jpg"
               }}
               repo="https://github.com/DevAbdelkader/fish-finder"
+              viewPath="https://devabdelkader.github.io/fish-finder/"
               tailwind="project-[#93d1de]"
             >
               <p>
@@ -40,6 +51,7 @@ const Page = () => {
                 src: "/images/projects/glb-to-image.jpg"
               }}
               repo="https://github.com/DevAbdelkader/glb-to-image"
+              viewPath="https://devabdelkader.github.io/glb-to-image/"
               tailwind="project-[#d4a4f8]"
             >
               <p>
@@ -54,6 +66,7 @@ const Page = () => {
                 src: "/images/projects/my-shelf.jpg"
               }}
               repo="https://github.com/DevAbdelkader/My-Shelf"
+              viewPath="https://devabdelkader.github.io/My-Shelf/"
               tailwind="project-[#c4939b]"
             >
               <p>
