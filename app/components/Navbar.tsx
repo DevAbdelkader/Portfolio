@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
       
       <div className="navbar-end">
-        <button className="btn btn-outline btn-sm border-[#FCB87A] text-[#FCB87A] hover:bg-[#FCB87A] hover:text-black max-sm:hidden">Download CV</button>
+        <a className="btn btn-outline btn-sm border-[#FCB87A] text-[#FCB87A] hover:bg-[#FCB87A] hover:text-black max-sm:hidden" href='/files/Abdelkader Mohamed Resume.pdf' download>Download CV</a>
         <div className="dropdown dropdown-end sm:hidden">
           <div role="button" tabIndex={0} className="btn btn-circle btn-ghost sm:hidden hover:bg-amber-900/40 border-0">
             <FiMenu size={18} />
