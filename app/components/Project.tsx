@@ -33,9 +33,10 @@ const Project = ({ title, badge, image: { src: imageSrc, alt: imageAlt }, childr
         </div>
         {children}
         <div className="project-actions">
-          { viewPath && <a className="project-btn" href={viewPath}>View</a> }
+          { viewPath && <a className="project-btn" target="_blank" href={viewPath}>View</a> }
           { repo && <a 
             className="link link-hover text-white/60 items-center gap-2 inline-flex text-sm"
+            target="_blank"
             href={repo}
             ><GoRepoForked size={16} />GitHub Repo</a>}
         </div>
