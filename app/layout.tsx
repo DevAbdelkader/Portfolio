@@ -2,6 +2,7 @@ import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer";
 import type { Metadata } from "next";
 import localFont from "next/font/local"
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 
@@ -92,6 +93,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );
