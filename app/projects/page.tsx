@@ -26,8 +26,13 @@ const Page = () => {
               image={{
                 src: "/images/projects/just-dashboard.jpg"
               }}
+              viewPath="https://just-dashboard.netlify.app"
               tailwind="project-[#e6fdfe]"
-            />
+            >
+              <p>
+                Built with Next.js, TypeScript, Tailwind CSS, and daisyUI, this template offers a clean user interface, 35+ modular components, and 20+ ready page patterns for handling orders, reservations, and more.
+              </p>
+            </Project>
 
             <Project
               title="Fish Finder"
@@ -40,7 +45,7 @@ const Page = () => {
               tailwind="project-[#93d1de]"
             >
               <p>
-                FishFinder (virtual) company. Lightweight web app that helps you explore a curated collection of 3D fish models and related assets.
+                FishFinder virtual company. Lightweight web app that helps you explore a curated collection of 3D fish models and related assets.
               </p>
             </Project>
 
