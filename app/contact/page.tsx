@@ -8,14 +8,14 @@ const Page = () => {
   return (
     <RouteAnimate id="contact" className="box-content flex flex-col min-h-[100vh] m-[0_auto] items-center py-28 px-2 bg-contact relative">
 
-      <video preload="auto" poster="/images/sky.jpg" playsInline autoPlay loop muted className="absolute top-0 left-0 object-cover -z-[1] w-full h-full">
+      <video preload="auto" poster="/images/sky.jpg" playsInline autoPlay loop muted className="opacity-85 absolute top-0 left-0 object-cover w-full h-full">
         <source src="/videos/sky.mp4" type="video/mp4" />
         Your browser does no support the video tag
       </video>
 
-      <h1 className="bg-gradient-to-tl from-[#75363b] via-[#c3777f] to-[#c69daa] bg-clip-text text-transparent font-audiowide text-[calc(18px+2vw)] sm:text-4xl">Contact</h1>
+      <h1 className="bg-gradient-to-tl from-[#75363b] via-[#c3777f] to-[#c69daa] bg-clip-text text-transparent font-audiowide text-[calc(18px+2vw)] sm:text-4xl z-[1]">Contact</h1>
       
-      <div className="text-white/50 text-md uppercase">You can reach me out via...</div>
+      <div className="text-white/50 text-md uppercase z-10">You can reach me out via...</div>
       
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
@@ -25,7 +25,7 @@ const Page = () => {
           duration: 0.4,
           scale: { type: "spring", visualDuration: 0.4, bounce: 0 }
         }}
-        className="bg-black/80 rounded-3xl mt-20 p-4">
+        className="bg-black/80 rounded-3xl mt-20 p-4 z-[1]">
         <ul className="list">
           <li className="list-row">
             <LinkedIn color="#666" size={26} />
