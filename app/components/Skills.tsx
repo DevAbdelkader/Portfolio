@@ -10,9 +10,9 @@ const Skills = ({ active }: { active: boolean }) => {
 
       <InfoCard title="Bio" tailwind="sm:col-span-8">
         <p className="font-alata">
-          Hello, I’m Abdelkader Mohamed, currently a full-stack web developer with a strong foundation in both design and development. I’ve built multiple projects using pure tech stack and languages for educational depth, as well as modern tools and frameworks for production-ready applications, always with a focus on security, performance, and subtle UX enhancements.
+          Abdelkader Mohamed, currently a <span className="text-white/70">full-stack web developer</span> with a strong foundation in both design and development. I’ve built multiple projects using pure tech stack and languages for educational depth, as well as modern tools and frameworks for <i className="text-white/70">production-ready applications</i>, always with a focus on <i className="text-white/70">security</i>, <i className="text-white/70">performance</i>, and <i className="text-white/70">subtle UX enhancements</i>.
           <br />
-          Beyond web development, I’m actively exploring topics like computer hardware, kernel development, and computer graphics, areas that fuel my curiosity and expand my understanding, even if I don’t work with them professionally yet. Always trying to level up.
+          Beyond web development, I’m actively exploring topics like <i className="text-white/70">cloud computing</i>, <i className="text-white/70">computer hardware</i>, <i className="text-white/70">kernel development</i>, and <i className="text-white/70">computer graphics</i>, areas that fuel my curiosity and expand my understanding, even if I don’t work with them professionally yet. Always trying to level up.
         </p>
       </InfoCard>
 
